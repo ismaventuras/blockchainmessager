@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import { Web3ReactProvider ,createWeb3ReactRoot} from "@web3-react/core";
+import {ethers} from "ethers";
+
+
+const Web3ReactProviderMetamask = createWeb3ReactRoot('metamask')
+
+function getLibrary(provider){
+  //const library = new ethers.providers.InfuraProvider(4,provider)
+  const library = new ethers.providers.Web3Provider(provider)
+  return library
+}
+function getLibraryMetamask(provider){
+  const library = new ethers.providers.Web3Provider(provider)
+  return library
+}
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <Web3ReactProvider getLibrary={getLibrary}>
+    <Web3ReactProviderMetamask getLibrary={getLibraryMetamask}>
+      <App />
+    </Web3ReactProviderMetamask>
+  </Web3ReactProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
