@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/blockchainmessager/static/js/main.5426b20a.js",
+    "index.html": "/blockchainmessager/index.html",
+    "main.5426b20a.js.map": "/blockchainmessager/static/js/main.5426b20a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5426b20a.js"
+  ]
+}
