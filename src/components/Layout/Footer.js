@@ -1,8 +1,20 @@
-import { Container, Link, Typography } from "@mui/material"
+import { Container, Link, SvgIcon, Typography } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 //import TelegramIcon from '@mui/icons-material/Telegram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Box } from "@mui/system";
+import {ReactComponent as StateOfDappsLogo} from './stateOfDapps_logo.svg'
+
+const ListedOn = () => {
+    return(
+        <Link href="https://www.stateofthedapps.com/dapps/blockchainmessager" target="_blank" color="inherit" sx={{"& svg": {fontSize:50}}}>
+            <SvgIcon>
+                <StateOfDappsLogo />
+            </SvgIcon>
+        </Link>
+    )
+}
+
 
 const Footer = () => {
     return(
@@ -10,7 +22,7 @@ const Footer = () => {
             <Typography align='center' variant="subtitle2">
                  Alone we can do so little; together we can do so much
             </Typography>
-            <Box sx={{display:"flex", gap:1}}>
+            <Box sx={{display:"flex", gap:1, alignItems:'center'}}>
                 <Link href="https://github.com/ismaventuras" target="_blank" color="inherit">
                     <GitHubIcon color='inherit' fontSize="large"/>
                 </Link>
@@ -20,7 +32,9 @@ const Footer = () => {
                 {/* <Link>
                     <TelegramIcon color='inherit' fontSize="large"/>
                 </Link> */}
+                <ListedOn/>
             </Box>
+            
         </Container>
     )
 }
