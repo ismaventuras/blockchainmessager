@@ -1,5 +1,8 @@
 # Blockchain Messager
 
+This app is now on the top 500 of ethereum apps on State of Dapps, thank you everyone for supporting the application!
+https://www.stateofthedapps.com/dapps/blockchainmessager
+
 Blockchain messager is a web application made with React that seeks to be able to send messages on Ethereum-based blockchains using text converted to hexadecimal in the `data` field of the transaction.
 
 To change the connected network click on the current connected network button and choose your preference, if you're connected via metamask it will swap both metamask and website network.
