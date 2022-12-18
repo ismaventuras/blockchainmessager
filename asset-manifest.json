@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/blockchainmessager/static/js/main.f590e79e.js",
+    "main.js": "/blockchainmessager/static/js/main.d85c904b.js",
     "static/media/stateOfDapps_logo.svg": "/blockchainmessager/static/media/stateOfDapps_logo.ff6847eca9ce9cf554ee53f6aec7f58a.svg",
     "index.html": "/blockchainmessager/index.html",
-    "main.f590e79e.js.map": "/blockchainmessager/static/js/main.f590e79e.js.map"
+    "main.d85c904b.js.map": "/blockchainmessager/static/js/main.d85c904b.js.map"
   },
   "entrypoints": [
-    "static/js/main.f590e79e.js"
+    "static/js/main.d85c904b.js"
   ]
 }
