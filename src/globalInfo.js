@@ -8,6 +8,7 @@ export const networkNames = {
     137: "polygon",
     1284: "moonbeam",
     1285: "moonriver",
+    1287: "moonbase_alpha",
     80001: "mumbai",
 }
 
@@ -21,6 +22,8 @@ export const RPC_URLS = {
     mumbai: "https://matic-mumbai.chainstacklabs.com",
     moonbeam: "https://rpc.api.moonbeam.network",
     moonriver: "https://rpc.api.moonriver.moonbeam.network",
+    moonbase_alpha: "https://moonbase-alpha.public.blastapi.io",
+    velas: "https://evmexplorer.velas.com/rpc",
 }
 export const RPC_URLS_FRONT = {
     local: ["http://localhost:8545"],
@@ -32,8 +35,10 @@ export const RPC_URLS_FRONT = {
     polygon: ["https://matic-mainnet.chainstacklabs.com"],
     moonbeam: ["https://rpc.api.moonbeam.network"],
     moonriver: ["https://rpc.api.moonriver.moonbeam.network"],
+    moonbase_alpha: ["https://moonbase-alpha.public.blastapi.io"],
+    velas: ["https://evmexplorer.velas.com/rpc"],
 }
-export const allowedNetworks = [1,4,56,97,137,1284,1285,80001]
+export const allowedNetworks = [1,4,56,97,106,137,1284,1285,1287,80001]
 
 export const defaultChain = 1
 
@@ -42,9 +47,11 @@ export const blockExplorerUrls = {
       4:"https://rinkeby.etherscan.io/",
       56:"https://bscscan.com/",
       97:"https://testnet.bscscan.com/",
+      106:"https://evmexplorer.velas.com/",
       137:"https://polygonscan.com/",
       1284:"https://moonscan.io/",
       1285:"https://moonriver.moonscan.io/",
+      1287:"https://moonbase.moonscan.io/",
       80001:"https://mumbai.polygonscan.com/",
 }
 
@@ -93,6 +100,17 @@ export const networkData = {
       },
       blockExplorerUrls: ["https://moonscan.io/"],
     },
+    moonbase_alpha : {
+      chainId:'0x507',
+      chainName:"Moonbase Alpha",
+      rpcUrls: RPC_URLS_FRONT.moonbase_alpha,  
+      nativeCurrency: {
+        name: "Moonbase Alpha",
+        symbol: "DEV",
+        decimals: 18,
+      },
+      blockExplorerUrls: ["https://moonbase.moonscan.io/"],
+    },
     mumbai : {
       chainId:'0x13881',
       chainName:"MUMBAI POLYGON",
@@ -125,6 +143,6 @@ export const networkData = {
         decimals: 18,
       },
       blockExplorerUrls: ["https://rinkeby.etherscan.com/"],
-    }
+    },
 }
   

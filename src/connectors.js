@@ -15,6 +15,7 @@ export const network = new NetworkConnector({
         137: RPC_URLS.polygon,
         1284: RPC_URLS.moonriver,
         1285: RPC_URLS.moonbeam,
+        1287: RPC_URLS.moonbase,
         1337: RPC_URLS.local,
         80001: RPC_URLS.mumbai,
     },
