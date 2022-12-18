@@ -26,7 +26,7 @@ const Footer = () => {
                 <Link href="https://github.com/ismaventuras" target="_blank" color="inherit">
                     <GitHubIcon color='inherit' fontSize="large"/>
                 </Link>
-                <Link href="https://twitter.com/HispaSquirtle" target="_blank" color="inherit">
+                <Link href="https://twitter.com/ismaelbdev" target="_blank" color="inherit">
                     <TwitterIcon color='inherit' fontSize="large"/>
                 </Link>
                 {/* <Link>
