@@ -1,16 +1,16 @@
 import Header from '@/components/layout/Header'
 import './globals.css'
 import WagmiProvider from '@/components/wagmi/WagmiProvider'
-import { Roboto } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'] })
+const textFont = Montserrat({ subsets: ['latin'], weight: ['100','200', '300', '400', '500', '700', '900'] })
 
 export const metadata = {
   title: 'blockchain messager',
   description: 'Blockchain messager is a web application that seeks to be able to send messages on Ethereum-based blockchains using text converted to utf8 in the data field of the transaction.',
 }
 
-const bodyCss = `${roboto.className} dark:text-white text-slate-800 bg-slate-100 dark:bg-slate-600`
+const bodyCss = `${textFont.className} dark:text-white text-slate-800 bg-slate-100 dark:bg-slate-600`
 
 const setInitialTheme = `
 function getUserPreference() {
